@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b454a9a4-9bd5-4b18-8673-12d55b35b05c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/多线程测试代码/src/com/njustxz/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/多线程测试代码/src/com/njustxz/VolatileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/多线程测试代码/src/com/njustxz/hook/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/多线程测试代码/src/com/njustxz/hook/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,22 +57,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="BooleanLockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.njustxz.BooleanLockTest" />
-      <module name="多线程测试代码" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.njustxz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.VolatileTest1">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.njustxz.Main" />
       <module name="多线程测试代码" />
@@ -113,12 +97,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VolatileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.njustxz.VolatileTest" />
+      <module name="多线程测试代码" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.njustxz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VolatileTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.njustxz.VolatileTest1" />
+      <module name="多线程测试代码" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.njustxz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VolatileTest1" />
+        <item itemvalue="Application.VolatileTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.UncaughtException" />
-        <item itemvalue="Application.BooleanLockTest" />
       </list>
     </recent_temporary>
   </component>
@@ -143,6 +154,7 @@
       <workItem from="1628500084784" duration="724000" />
       <workItem from="1628587669563" duration="895000" />
       <workItem from="1628667115167" duration="90000" />
+      <workItem from="1628731385348" duration="4357000" />
     </task>
     <servers />
   </component>
@@ -170,26 +182,26 @@
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.6.1920.1040@0.0.1536.824" timestamp="1628174822866" />
     <state x="2606" y="217" key="FileChooserDialogImpl/0.0.1536.824/1920.6.1920.1040@1920.6.1920.1040" timestamp="1628667203838" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1628598896764">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1628739887308">
       <screen x="1920" y="6" width="1920" height="1040" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.6.1920.1040@0.0.1536.824" timestamp="1628345672734" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.6.1920.1040@1920.6.1920.1040" timestamp="1628598896764" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1628598896764">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.6.1920.1040@1920.6.1920.1040" timestamp="1628739887308" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1628739887308">
       <screen x="1920" y="6" width="1920" height="1040" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.6.1920.1040@0.0.1536.824" timestamp="1628345672734" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1536.824/1920.6.1920.1040@1920.6.1920.1040" timestamp="1628598896764" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1628598896764">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1536.824/1920.6.1920.1040@1920.6.1920.1040" timestamp="1628739887308" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1628739887308">
       <screen x="1920" y="6" width="1920" height="1040" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.6.1920.1040@0.0.1536.824" timestamp="1628345672734" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1536.824/1920.6.1920.1040@1920.6.1920.1040" timestamp="1628598896764" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1628598896764">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1536.824/1920.6.1920.1040@1920.6.1920.1040" timestamp="1628739887308" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1628739887308">
       <screen x="1920" y="6" width="1920" height="1040" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.6.1920.1040@0.0.1536.824" timestamp="1628345672734" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1536.824/1920.6.1920.1040@1920.6.1920.1040" timestamp="1628598896764" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1536.824/1920.6.1920.1040@1920.6.1920.1040" timestamp="1628739887308" />
     <state x="270" y="54" key="SettingsEditor" timestamp="1628134851835">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
